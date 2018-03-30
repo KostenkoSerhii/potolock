@@ -7,6 +7,8 @@
 	&__title
 		font-size: 42px
 		margin-bottom: 7px
+		+md
+			font-size: 25px
 	&__map-wrapper
 		border: 5px solid $white
 		box-shadow: 0 5px 5px 0px  rgba($black, 0.3)
@@ -18,10 +20,20 @@
 			transform: translateY(-50%)
 			z-index: 1
 			left: 270px
+			+lg
+				display: none
 	&__map
 		height: 598px
+		+md
+			height: 300px
+		+sm
+			height: 250px
 	p
 		font-size: 30px
 		letter-spacing: 2px
+		+md
+			font-size: 20px
+		+sm
+			font-size: 18px
 	.bg-texture
 		top: -50px

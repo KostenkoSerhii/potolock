@@ -6,20 +6,34 @@
 		margin-bottom: 58px
 		text-align: center
 		font-size: 0
+		+sm
+			margin-bottom: 35px
 		.check
 			margin: 0 15px
 			display: inline-block
 			vertical-align: top
+			+lg
+				margin-bottom: 20px
+			+sm
+				display: block
+				margin: 0 0 20px
+				text-align: left
 	&__items
 		max-width: 1040px
 		display: flex
 		justify-content: space-between
 		align-items: flex-start
 		margin: 0 auto
+		+sm
+			display: block
 	&__text
 		text-align: center
 		font-size: 30px
 		margin-bottom: 30px
+		+md
+			font-size: 20px
+		+sm
+			font-size: 16px
 	.title-sm
 		max-width: 1005px
 		margin: 0 auto 30px
@@ -39,16 +53,30 @@
 		margin: 0 auto 25px
 		border-radius: 50%
 		position: relative
+		+md
+			width: 120px
+			height: 120px
 		img
 			max-width: 81px
 			height: auto
 			max-height: 92px
 			+vcenter
+			+md
+				max-width: 70px
+				max-height: 80px
 	&__title
 		font-size: 30px
 		margin-bottom: 20px
+		+md
+			font-size: 20px
+		+sm
+			font-size: 16px
 	&__text
 		font-size: 24px
+		+md
+			font-size: 18px
+		+sm
+			font-size: 14px
 	&--small-text
 		.block-item__text
 			font-size: 18px

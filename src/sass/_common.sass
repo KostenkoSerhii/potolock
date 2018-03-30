@@ -1,16 +1,5 @@
 
-=lg
-	@media only screen and (max-width: "1199px")
-		@content
-=l
-	@media only screen and (max-width: "1023px")
-		@content
-=m
-	@media only screen and (max-width: "991px")
-		@content
-=xs
-	@media only screen and (max-width: "767px")
-		@content
+
 
 $white: #fff
 $black: #000
@@ -39,6 +28,10 @@ body
 	+smooth-font
 	color: $black
 	font-size: 18px
+	+md
+		font-size: 16px
+	+sm
+		font-size: 14px
 .out
 	overflow: hidden
 
@@ -49,16 +42,36 @@ body
 .title-lg
 	font-size: 54px
 	text-transform: uppercase
+	+md
+		font-size: 30px
+	+sm
+		font-size: 20px
 .title-l
 	font-size: 50px
 	text-transform: uppercase
+	+md
+		font-size: 28px
+	+sm
+		font-size: 18px
 .title-md
 	font-size: 48px
 	text-transform: uppercase
+	+md
+		font-size: 26px
+	+sm
+		font-size: 16px
 .title-m
 	font-size: 43px
+	+md
+		font-size: 24px
+	+sm
+		font-size: 16px
 .title-sm
 	font-size: 29px
+	+md
+		font-size: 22px
+	+sm
+		font-size: 16px
 .title-spec
 	text-align: center
 	color: $green
@@ -73,6 +86,11 @@ body
 	background: rgba($green-l, 0.5)
 	padding: 17px 0
 	text-align: center
+	+md
+		font-size: 20px
+	+sm
+		padding: 10px 0
+		font-size: 16px
 	&--op-1
 		background: rgba($green-l, 1)
 		z-index: 1

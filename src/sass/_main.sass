@@ -2,24 +2,34 @@
 	display: flex
 	justify-content: space-between
 	padding: 25px 0 26px
+	+md
+		display: block
+		padding: 15px 0
+		text-align: center
 	&__logo
 		display: block
 		flex-grow: 0
 		padding-top: 4px
+		+sm
+			img
+				max-width: 200px
 	&__phone
 		text-align: center
 		flex-grow: 1
 		padding-top: 15px
+		+md
+			margin-bottom: 25px
 		a
 			display: inline-block
 			vertical-align: top
 			line-height: 1
 			font-weight: 700
-			
 			color: $black
 			font-size: 0
 		span
 			font-size: 56px
+			+sm
+				font-size: 30px
 		i
 			position: relative
 			top: 6px
@@ -28,11 +38,19 @@
 			width: 49px
 			height: 49px
 			margin-right: 7px
+			+sm
+				width: 30px
+				height: 30px
 		p
 			font-size: 24px
+			+sm
+				font-size: 16px
 	&__form
 		flex-basis: 262px
 		flex-shrink: 0
+		+md
+			max-width: 500px
+			margin: 0 auto
 		input
 			display: block
 			width: 100%
@@ -45,6 +63,9 @@
 			line-height: 44px
 			padding: 0 10px
 			margin-bottom: 18px
+			+sm
+
+				font-size: 16px
 			+placeholder
 				color: $gray2
 				font-weight: 300
@@ -61,9 +82,13 @@
 	background-position: 50% 0
 	z-index: 1
 	background-repeat: no-repeat
+	+md
+		display: none
 .check
 	position: relative
 	padding-left: 41px
+	+lg
+		margin-bottom: 20px
 	&__icon
 		position: absolute
 		top: 10px
@@ -71,6 +96,8 @@
 		width: 30px
 		height: 25px
 		background-color: $green5
+		+lg
+			top: 0
 		&:before
 			content: ''
 			position: absolute
@@ -81,10 +108,15 @@
 	span
 		font-size: 36px
 		color: $black
-
+		+lg
+			font-size: 20px
+		+sm
+			font-size: 14px
 	&--bold
 		.check__icon
 			top: 5px
+			+sm
+				top: -2px
 		span
 			font-size: 30px
 			font-weight: 700
@@ -94,12 +126,19 @@
 	position: relative
 	background: rgba($green-l, 0.5)
 	padding-top: 15vh
+	+rh(900)
+		padding-top: 50px
+	+sm
+		padding-top: 20px
+	&--thanks
+		+sm
+			padding-top: 50px
 	&__content
 		position: relative
 		z-index: 1
 		color: $white
 		text-align: center
-		width: 600px
+		max-width: 600px
 		margin: 0 auto
 		padding: 10px
 		background-color: #35b729
@@ -108,17 +147,32 @@
 		background-image: linear-gradient(to top, #35b729 0%, rgba(94, 216, 46, 0.57) 99%, rgba(94, 216, 46, 0.57) 100%)
 		&--form
 			padding: 50px 10px
+			+md
+				padding: 25px 10px
 
 	&__title
 		font-size: 35px
 		font-weight: 700
 		text-transform: uppercase
 		margin-bottom: 20px
+		+md
+			font-size: 24px
+			margin-bottom: 10px
+		+sm
+			font-size: 20px
 	&__text
 		font-size: 23px
 		margin-bottom: 20px
+		+md
+			font-size: 18px
+		+sm
+			font-size: 16px
 		&--sm
 			font-size: 18px
+			+md
+				font-size: 16px
+			+sm
+				font-size: 14px
 .cform
 	max-width: 480px
 	margin: 0 auto
@@ -134,8 +188,15 @@
 		line-height: 51px
 		color: $black
 		font-family: 'PT Sans', sans-serif
+		+md
+			height: 40px
+			line-height: 40px
+			margin-bottom: 15px
 		+placeholder
 			color: #7a7a7a
 	.btn-orange
 		margin-top: 32px
 		width: 100%
+		+md
+			max-width: 100%
+			margin-top: 20px

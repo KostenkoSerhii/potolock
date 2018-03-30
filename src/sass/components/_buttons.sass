@@ -13,10 +13,16 @@
 	background-image: linear-gradient(to top, #fff6dc 0%, #029d52 0%, #5fdb21 100%)
 	+trans
 	min-width: 165px
-	&:hover
-		background-image: linear-gradient(to bottom, #fff6dc 0%, #029d52 0%, #5fdb21 100%)
-	&:active
-		background-image: linear-gradient(to bottom, #029d52 0%, #029d52 0%, #029d52 100%)
+	+md
+		font-size: 20px
+		padding: 8px
+	+sm
+		font-size: 16px
+	+rmin(1024)
+		&:hover
+			background-image: linear-gradient(to bottom, #fff6dc 0%, #029d52 0%, #5fdb21 100%)
+		&:active
+			background-image: linear-gradient(to bottom, #029d52 0%, #029d52 0%, #029d52 100%)
 .btn-orange
 	appearance: none
 	border: none
@@ -31,10 +37,17 @@
 	text-align: center
 	font-size: 36px
 	color: $white
-	&:hover
-		background-image: linear-gradient(180deg, #ff6000 0%, #ff6000 5%, #ff7800 100%)
-	&:active
-		background-image: linear-gradient(180deg, #ff1800 0%, #ff1800 5%, #ff5a00 100%, #ff5a00 100%)
+	+md
+		font-size: 20px
+		padding: 10px
+		max-width: 400px
+	+sm
+		font-size: 16px
+	+rmin(1024)
+		&:hover
+			background-image: linear-gradient(180deg, #ff6000 0%, #ff6000 5%, #ff7800 100%)
+		&:active
+			background-image: linear-gradient(180deg, #ff1800 0%, #ff1800 5%, #ff5a00 100%, #ff5a00 100%)
 
 .btn-prev, .btn-next
 	width: 23px
