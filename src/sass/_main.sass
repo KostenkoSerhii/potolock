@@ -66,7 +66,7 @@
 	padding-left: 41px
 	&__icon
 		position: absolute
-		top: 5px
+		top: 10px
 		left: 0
 		width: 30px
 		height: 25px
@@ -83,6 +83,59 @@
 		color: $black
 
 	&--bold
+		.check__icon
+			top: 5px
 		span
 			font-size: 30px
 			font-weight: 700
+.full-page
+	width: 100%
+	min-height: 100vh
+	position: relative
+	background: rgba($green-l, 0.5)
+	padding-top: 15vh
+	&__content
+		position: relative
+		z-index: 1
+		color: $white
+		text-align: center
+		width: 600px
+		margin: 0 auto
+		padding: 10px
+		background-color: #35b729
+		border-radius: 18px
+		box-shadow: 0 4px 4px rgba(30, 30, 29, 0.75)
+		background-image: linear-gradient(to top, #35b729 0%, rgba(94, 216, 46, 0.57) 99%, rgba(94, 216, 46, 0.57) 100%)
+		&--form
+			padding: 50px 10px
+
+	&__title
+		font-size: 35px
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 20px
+	&__text
+		font-size: 23px
+		margin-bottom: 20px
+		&--sm
+			font-size: 18px
+.cform
+	max-width: 480px
+	margin: 0 auto
+	input
+		display: block
+		width: 100%
+		margin-bottom: 30px
+		background-color: $white
+		border: 1px solid #3c0
+		height: 61px
+		padding: 0 10px
+		font-size: 23px
+		line-height: 51px
+		color: $black
+		font-family: 'PT Sans', sans-serif
+		+placeholder
+			color: #7a7a7a
+	.btn-orange
+		margin-top: 32px
+		width: 100%
