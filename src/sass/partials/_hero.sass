@@ -3,7 +3,7 @@
 	position: relative
 	// z-index: 1
 	&__top
-		background-color: $green3
+		background-color: rgba($green3, 0.6)
 		padding-top: 40px
 		padding-bottom: 65px
 		position: relative
@@ -47,8 +47,33 @@
 				line-height: 1
 				position: relative
 				top: -2px
-
-
+	&__bottom
+		background: $gray
+		padding: 40px 0 0
+	&__prod-list
+		display: flex
+		justify-content: space-between
 	.title-lg
 		max-width: 940px
 		margin: 0 auto 18px
+.prod-block
+	width: 360px
+	flex-basis: 360px
+	flex-grow: 0
+	text-align: center
+	margin-bottom: 35px
+	&__img
+		height: 550px
+		margin-bottom: 20px
+		img
+			object-fit: cover
+			width: 100%
+			height: 100%
+	&__title
+		font-size: 24px
+		font-weight: 700
+		margin-bottom: 15px
+	&__text
+		font-weight: 700
+	.btn-g
+		margin-bottom: 18px
