@@ -1,0 +1,72 @@
+
+=lg
+	@media only screen and (max-width: "1199px")
+		@content
+=l
+	@media only screen and (max-width: "1023px")
+		@content
+=m
+	@media only screen and (max-width: "991px")
+		@content
+=xs
+	@media only screen and (max-width: "767px")
+		@content
+
+$white: #fff
+$black: #000
+$green: #008e49
+$green2:  #35b729
+$green3: #e3f7db
+$green4: #d9ebd7
+$green5: #94e273
+$green-l: #d6eecb
+$orange: #ff8400
+$orange-bg: #35b729
+$gray: #f5f2ea
+$gray2: #7a7a7a
+$gray3: #f5f2ea
+
+
+
+a
+	text-decoration: none
+h1, h2, h3, h4, h5, h6
+	font-weight: normal
+body
+	background: $white
+	font-family: 'PT Sans', sans-serif;
+	line-height: 1.2
+	font-weight: 400
+	+smooth-font
+.out
+	overflow: hidden
+
+.title-lg, .title-md, .title-m, .title-sm, .title-l
+	color: $green
+	text-align: center
+	font-weight: 700
+.title-lg
+	font-size: 54px
+	text-transform: uppercase
+.title-l
+	font-size: 50px
+.title-md
+	font-size: 48px
+.title-m
+	font-size: 43px
+.title-sm
+	font-size: 29px
+.title-spec
+	text-align: center
+	color: $green
+	text-align: center
+	font-size: 45px
+	span
+		font-size: 40px
+.title-line
+	font-size: 36px
+	color: $black
+	text-transform: uppercase
+	background: $green-l
+	padding: 5px 0
+	text-align: center
