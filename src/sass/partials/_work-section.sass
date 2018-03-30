@@ -1,8 +1,9 @@
 .wsection
 	position: relative
 	padding-top: 26px
+	padding-bottom: 35px
 	&__checks
-		margin-bottom: 40px
+		margin-bottom: 58px
 		text-align: center
 		font-size: 0
 		.check
@@ -15,6 +16,10 @@
 		justify-content: space-between
 		align-items: flex-start
 		margin: 0 auto
+	&__text
+		text-align: center
+		font-size: 30px
+		margin-bottom: 30px
 	.title-sm
 		max-width: 1005px
 		margin: 0 auto 30px
@@ -24,9 +29,9 @@
 		margin-bottom: 35px
 	.bg-texture
 		top: -60px
-.work-item
+.block-item
 	text-align: center
-	margin-bottom: 40px
+	margin-bottom: 34px
 	&__img
 		background-color: $green-l
 		width: 152px
@@ -39,5 +44,11 @@
 			height: auto
 			max-height: 92px
 			+vcenter
+	&__title
+		font-size: 30px
+		margin-bottom: 20px
 	&__text
 		font-size: 24px
+	&--small-text
+		.block-item__text
+			font-size: 18px

@@ -1,10 +1,9 @@
 // import svgUseIt from 'svg-use-it';
-// import scrollMagic from './components/scrollmagic.js';
-// import techAnimation from './components/tech-animation.js';
-// import slick from 'slick-carousel';
+import slick from 'slick-carousel';
+import slider from './components/slider.js';
 
 $(document).ready(function(){
-
+	slider();
 	// svgUseIt();
 	// scrollMagic();
 	// techAnimation();

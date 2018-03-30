@@ -9,8 +9,10 @@
   font-style: normal;
 }
 
-$icon-facebook: "\EA01";
-$icon-phone: "\EA02";
+$icon-arrow-left: "\EA01";
+$icon-arrow-right: "\EA02";
+$icon-facebook: "\EA03";
+$icon-phone: "\EA04";
 
 
 %icon {
@@ -29,5 +31,7 @@ $icon-phone: "\EA02";
   display: inline-block;
 }
 
+.icon-arrow-left:before { content: $icon-arrow-left; }
+.icon-arrow-right:before { content: $icon-arrow-right; }
 .icon-facebook:before { content: $icon-facebook; }
 .icon-phone:before { content: $icon-phone; }

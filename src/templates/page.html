@@ -1,7 +1,7 @@
 ---
 title: Index page
 ---
-{% extends "layouts/_layout.html" %}
+{% extends "layouts/_layout-map.html" %}
 
 {% block content %}
 
@@ -10,6 +10,56 @@ title: Index page
 {% include "components/_prosto-block.html" %}
 {% include "components/_logo-section.html" %}
 {% include "components/_work-section.html" %}
+{% include "components/_sale-section.html" %}
+{% include "components/_portfolio.html" %}
+<div class="title-line title-line--op-1">
+	<div class="l">
+		<p>Чтоб получить натяжной потолок как можно скорее:</p>
+	</div>
+</div>
+{% include "components/_get-fast.html" %}
+<div class="title-line title-line--op-1">
+	<div class="l">
+		<p>Наши заказчики довольны своим натяжным потолком</p>
+	</div>
+</div>
+<!--begin reviews-->
+<div class="reviews">
+	<!--begin l-->
+	<div class="l">
+		<div class="reviews__list">
+			<div class="review">
+				<iframe width="100%" height="auto" src="https://www.youtube.com/embed/Y7fIyAV5ld4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+			<div class="review">
+				<iframe width="100%" height="auto" src="https://www.youtube.com/embed/PWvFi5p7_3o?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+			<div class="review">
+				<iframe width="100%" height="auto" src="https://www.youtube.com/embed/PWvFi5p7_3o?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+		</div>
+		<a class="btn-orange" href="#">Записаться  на  бесплатный замер</a>
+	</div>
+	<!--end l-->
 
+</div>
+<!--end reviews-->
+<!--begin contacts-->
+<div class="contacts">
+	<div class="bg-texture" style="background-image: url('img/bg3.png');"></div>
+	<!--begin l-->
+	<div class="l">
+		<h3 class="contacts__title">Контакты:</h3>
+		<div class="contacts__map-wrapper">
+			<img class="contacts__logo" src="img/logo.png" alt="logo">
+			<div class="contacts__map" id="map"></div>
+		</div>
+		<p>Киев, ул. 25-я Садовая, 46</p>
+	</div>
+	<!--end l-->
+
+</div>
+<!--end contacts-->
+{% include "partials/_footer.html" %}
 
 {% endblock %}

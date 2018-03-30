@@ -31,3 +31,26 @@
 		background-image: linear-gradient(180deg, #ff6000 0%, #ff6000 5%, #ff7800 100%)
 	&:active
 		background-image: linear-gradient(180deg, #ff1800 0%, #ff1800 5%, #ff5a00 100%, #ff5a00 100%)
+
+.btn-prev, .btn-next
+	width: 23px
+	height: 40px
+	font-size: 0
+	cursor: pointer
+	position: absolute
+	top: 38%
+	position: absolute
+	z-index: 1
+	svg
+		width: 23px
+		height: 40px
+		fill: $white
+		+trans
+	+rmin(1024)
+		&:hover
+			svg
+				fill: $green
+.btn-prev
+	left: 13px
+.btn-next
+	right: 13px
