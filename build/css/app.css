@@ -1075,6 +1075,12 @@ body {
   object-fit: cover;
 }
 
+.portfolio-item__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
 .portfolio-item__text {
   font-size: 18px;
 }
@@ -1153,7 +1159,7 @@ body {
 }
 
 .footer .head-foot {
-  padding: 48px 0 20px;
+  padding: 48px 0;
 }
 
 .btn-g {
@@ -1439,7 +1445,7 @@ body {
     height: 220px;
   }
   .portfolio-item__text{
-    font-size: 16px;
+    font-size: 14px;
   }
   .get-fast{
     padding-top: 35px;
@@ -1546,10 +1552,11 @@ body {
     padding-left: 5px;
   }
   .hero__right p{
-    font-size: 20px;
+    font-size: 50px;
+    padding-top: 30px;
   }
   .hero__right p span{
-    font-size: 16px;
+    font-size: 20px;
   }
   .hero__bottom{
     padding: 20px 0 5px;
@@ -1584,12 +1591,25 @@ body {
   }
   .lsection__inner{
     display: block;
+    position: relative;
   }
   .lsection__inner img{
     display: none;
   }
+  .lsection__inner .lsection__logo-img{
+    display: block;
+  }
+  .lsection__logo-img{
+    width: 85px;
+    position: absolute;
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    left: -14px;
+    top: 30px;
+  }
   .lsection__text{
     font-size: 16px;
+    padding-left: 61px;
   }
   .wsection__checks{
     margin-bottom: 35px;
@@ -1609,6 +1629,12 @@ body {
     font-size: 16px;
   }
   .block-item__text{
+    font-size: 14px;
+  }
+  .block-item__text br{
+    display: none;
+  }
+  .block-item--small-text .block-item__text{
     font-size: 14px;
   }
   .sale-section{
@@ -1672,8 +1698,11 @@ body {
   }
   .portfolio-item{
     display: block;
-    margin: 0 auto 25px;
+    margin: 0 auto 40px;
     width: 100%;
+  }
+  .portfolio-item__title{
+    font-size: 16px;
   }
   .get-fast__list{
     display: block;
@@ -1683,6 +1712,9 @@ body {
   }
   .contacts p{
     font-size: 18px;
+  }
+  .footer .head-foot{
+    padding: 25px 0 35px;
   }
   .btn-g{
     font-size: 16px;
@@ -1695,6 +1727,21 @@ body {
 @media only screen and (max-width: 599px){
   .slider__slide{
     height: 250px;
+  }
+}
+
+@media only screen and (max-width: 499px){
+  .hero__left{
+    width: 40%;
+  }
+  .hero__right{
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .hero__right{
+    width: 60%;
   }
 }
 

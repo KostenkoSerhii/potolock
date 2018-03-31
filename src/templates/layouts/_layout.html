@@ -10,6 +10,7 @@
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" media="all" href="css/app.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   {# {% include "../partials/_media-tags.html" %} #}
 </head>
 <body>
@@ -28,54 +29,54 @@
 
    (function(){
 
-   var windowW = window.innerWidth;
-   if(windowW < 1024) return;
+     var windowW = window.innerWidth;
+     if(windowW < 1024) return;
 
-    var widget_id = 'qS2nSAHaGK';var d=document;var w=window;function l(){
-    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+     var widget_id = 'qS2nSAHaGK';var d=document;var w=window;function l(){
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
 
-  </script>
-  {% endif %}
+    </script>
+    {% endif %}
 
 
-  {% if mapOnPage %}
-  <script>
-    /*begin map*/
-    var windowW = window.innerWidth;
-    let icon, mapCenter;
-    if(windowW > 1169){
-      iconImg = 'img/marker.png';
-      iconImgSizeX = 97;
-      iconImgSizeY = 150;
-      mapCenter = {lat: 50.491201, lng: 30.360654};
+    {% if mapOnPage %}
+    <script>
+      /*begin map*/
+      var windowW = window.innerWidth;
+      let icon, mapCenter;
+      if(windowW > 1169){
+        iconImg = 'img/marker.png';
+        iconImgSizeX = 97;
+        iconImgSizeY = 150;
+        mapCenter = {lat: 50.491201, lng: 30.360654};
 
-    } else{
-      iconImg = 'img/marker-sm.png';
-      iconImgSizeX = 30;
-      iconImgSizeY = 46;
-      mapCenter = {lat: 50.491201, lng: 30.365654};
-    };
-    var map;
-    var initMap =  function () {
-      map = new google.maps.Map(document.getElementById('map'), {
-        center: mapCenter,
-        zoom: 15,
-        scrollwheel: false
-      });
-      var marker = new google.maps.Marker({
-        position: {lat: 50.491201, lng: 30.365654},
-        map: map,
-        icon: {
-          url: iconImg,
-          scaledSize: new google.maps.Size(iconImgSizeX, iconImgSizeY )
-        },
-        title: 'Киев, ул. 25-я Садовая, 46'
-      });
-    }
-    /*end map*/
-  </script>
-  <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA04VMqMvV-ifF4mtvOnsUkf3Lw9F9ivAg&callback=initMap"
-  type="text/javascript"></script>
-  {% endif %}
-</body>
-</html>
+      } else{
+        iconImg = 'img/marker-sm.png';
+        iconImgSizeX = 30;
+        iconImgSizeY = 46;
+        mapCenter = {lat: 50.491201, lng: 30.365654};
+      };
+      var map;
+      var initMap =  function () {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: mapCenter,
+          zoom: 15,
+          scrollwheel: false
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: 50.491201, lng: 30.365654},
+          map: map,
+          icon: {
+            url: iconImg,
+            scaledSize: new google.maps.Size(iconImgSizeX, iconImgSizeY )
+          },
+          title: 'Киев, ул. 25-я Садовая, 46'
+        });
+      }
+      /*end map*/
+    </script>
+    <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA04VMqMvV-ifF4mtvOnsUkf3Lw9F9ivAg&callback=initMap"
+    type="text/javascript"></script>
+    {% endif %}
+  </body>
+  </html>
