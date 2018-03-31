@@ -65,6 +65,7 @@
     "lodash": "^4.3.0"
   },
   "dependencies": {
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "svg-use-it": "^1.1.6"
   }
 }

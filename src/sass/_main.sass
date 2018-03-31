@@ -63,12 +63,15 @@
 			line-height: 44px
 			padding: 0 10px
 			margin-bottom: 18px
+			+trans
 			+sm
 
 				font-size: 16px
 			+placeholder
 				color: $gray2
 				font-weight: 300
+			&.is-error
+				border-color: red
 	.btn-g
 		width: 100%
 .bg-texture
@@ -188,12 +191,16 @@
 		line-height: 51px
 		color: $black
 		font-family: 'PT Sans', sans-serif
+		+trans
+		border: 2px solid $white
+		+placeholder
+			color: #7a7a7a
+		&.is-error
+				border-color: red
 		+md
 			height: 40px
 			line-height: 40px
 			margin-bottom: 15px
-		+placeholder
-			color: #7a7a7a
 	.btn-orange
 		margin-top: 32px
 		width: 100%

@@ -390,6 +390,7 @@ body {
   line-height: 44px;
   padding: 0 10px;
   margin-bottom: 18px;
+  transition: all 0.2s ease;
 }
 
 .head-foot__form input::-webkit-input-placeholder {
@@ -405,6 +406,10 @@ body {
 .head-foot__form input::placeholder {
   color: #7a7a7a;
   font-weight: 300;
+}
+
+.head-foot__form input.is-error {
+  border-color: red;
 }
 
 .head-foot .btn-g {
@@ -524,6 +529,8 @@ body {
   line-height: 51px;
   color: #000;
   font-family: 'PT Sans', sans-serif;
+  transition: all 0.2s ease;
+  border: 2px solid #fff;
 }
 
 .cform input::-webkit-input-placeholder {
@@ -536,6 +543,10 @@ body {
 
 .cform input::placeholder {
   color: #7a7a7a;
+}
+
+.cform input.is-error {
+  border-color: red;
 }
 
 .cform .btn-orange {

@@ -5,5 +5,5 @@ PageList:
   ready: 50%
 - file: callback-page.html
   ready: 50%
-- file: thank-page.html
+- file: page-thanks.html
   ready: 50%
