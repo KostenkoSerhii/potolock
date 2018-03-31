@@ -368,6 +368,10 @@ body {
 }
 
 .head-foot__phone p {
+  padding-top: 10px;
+}
+
+.head-foot__phone p a {
   font-size: 24px;
 }
 
@@ -1504,7 +1508,7 @@ body {
     width: 30px;
     height: 30px;
   }
-  .head-foot__phone p{
+  .head-foot__phone p a{
     font-size: 16px;
   }
   .head-foot__form input{
