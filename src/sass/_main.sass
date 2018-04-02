@@ -94,6 +94,8 @@
 	padding-left: 41px
 	+lg
 		margin-bottom: 20px
+	+sm
+		padding-left: 26px
 	&__icon
 		position: absolute
 		top: 10px
@@ -103,6 +105,9 @@
 		background-color: $green5
 		+lg
 			top: 0
+		+sm
+			width: 20px
+			height: 15px
 		&:before
 			content: ''
 			position: absolute
@@ -110,13 +115,17 @@
 			top: -7px
 			+s(check)
 			z-index: 1
+			+sm
+				transform: scale(0.5)
+				top: -15px
+				left: -7px
 	span
 		font-size: 36px
 		color: $black
 		+lg
 			font-size: 20px
 		+sm
-			font-size: 14px
+			font-size: 12px
 	&--bold
 		.check__icon
 			top: 5px

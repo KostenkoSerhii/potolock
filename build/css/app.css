@@ -703,6 +703,7 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-bottom: 57px;
+  font-size: 0;
 }
 
 .psection__bg-text {
@@ -998,8 +999,8 @@ body {
   vertical-align: top;
   width: 50%;
   text-align: right;
-  font-size: 30px;
-  padding-right: 5px;
+  font-size: 24px;
+  padding: 5px;
 }
 
 .portfolio__top {
@@ -1520,8 +1521,21 @@ body {
   .head-foot__form input{
     font-size: 16px;
   }
+  .check{
+    padding-left: 26px;
+  }
+  .check__icon{
+    width: 20px;
+    height: 15px;
+  }
+  .check__icon:before{
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    top: -15px;
+    left: -7px;
+  }
   .check span{
-    font-size: 14px;
+    font-size: 12px;
   }
   .check--bold .check__icon{
     top: -2px;
@@ -1578,6 +1592,12 @@ body {
   .psection__checks{
     display: block;
   }
+  .psection__checks .check{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding-right: 5px;
+  }
   .lsection{
     padding-bottom: 20px;
   }
@@ -1613,10 +1633,14 @@ body {
   }
   .wsection__checks{
     margin-bottom: 35px;
+    text-align: left;
   }
   .wsection__checks .check{
-    display: block;
-    margin: 0 0 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding-right: 5px;
+    margin: 0 0 10px;
     text-align: left;
   }
   .wsection__items{

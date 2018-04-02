@@ -27,7 +27,7 @@
 
 	header('Content-Type: text/html; charset=utf-8'); 
 	mb_internal_encoding('UTF-8');  
-	$to = 'kostenkos132@gmail.com';    
+	$to = 'callcentre@potolokprosto.com';    
 	$subject = $idform; 
 	$subject = mb_encode_mimeheader($subject, "UTF-8", "Q");   
 	$message =$msg;
