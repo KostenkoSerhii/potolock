@@ -39,24 +39,28 @@
 	&__inner
 		text-align: center
 		font-size: 0
+		+sm
+			max-width: 300px
+			margin-left: auto
+			margin-right: auto
 	&__left, &__right
 		display: inline-block
 		vertical-align: top
 		text-align: left
+		+r(499)
+			width: 50%
 	&__left
 		padding-right: 15px
 		+sm
 			padding-right: 5px
-		+r(499)
-			width: 40%
+		
 	&__right
 		padding-left: 15px
 		+sm
 			padding-left: 5px
-		+r(499)
-			width: 40%
-		+r(450)
-			width: 60%
+		// +r(499)
+		// 	width: 40%
+
 		p
 			font-size: 150px
 			color: $green
@@ -64,7 +68,7 @@
 			font-weight: 700
 			+sm
 				font-size: 50px
-				padding-top: 30px
+				padding-top: 23px
 			span
 				font-size: 48px
 				color: $black
@@ -73,6 +77,9 @@
 				top: -2px
 				+sm
 					font-size: 20px
+					display: block
+					margin-top: 5px
+					padding-left: 5px
 	&__bottom
 		background: $gray
 		padding: 40px 0 0

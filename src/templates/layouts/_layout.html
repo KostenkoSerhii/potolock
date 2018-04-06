@@ -11,9 +11,9 @@
   {% if keywords %}
   <meta name="keywords" content="{{keywords}}">
   {% endif %}
-    {% if description %}
+  {% if description %}
   <meta name="description" content="{{description}}">
-   {% endif %}
+  {% endif %}
   <link rel="stylesheet" media="all" href="css/app.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
@@ -83,6 +83,9 @@
     </script>
     <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA04VMqMvV-ifF4mtvOnsUkf3Lw9F9ivAg&callback=initMap"
     type="text/javascript"></script>
+    {% endif %}
+    {% if sms %}
+    <script src='//callbackhub.com/l/call.js'></script>
     {% endif %}
   </body>
   </html>
